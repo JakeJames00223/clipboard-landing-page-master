@@ -1,0 +1,360 @@
+:root {
+  /* colors */
+  --color-primary-Strong-Cyan: hsl(171, 66%, 44%);
+  --color-primary-Light-Blue: hsl(233, 100%, 69%);
+  --color-neutral-Dark-Grayish-Blue: hsl(210, 10%, 33%);
+  --color-neutral-Grayish-Blue: hsl(201, 11%, 66%);
+  --color-neutral-White: hsl(0, 0%, 100%);
+
+  /* fonts */
+  --font-size: 18px;
+  --font-family-BaiJamjuree: "Bai Jamjuree", sans-serif;
+  --font-weight-Reg: 400;
+  --font-weight-SemiBold: 600;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: var(--font-size);
+  font-family: var(--font-family-BaiJamjuree);
+  font-weight: var(--font-weight-Reg);
+  color: var(--color-neutral-Dark-Grayish-Blue);
+}
+body {
+  overflow-x: hidden;
+}
+
+p {
+  color: var(--color-neutral-Grayish-Blue);
+  margin-bottom: 2rem;
+}
+.ios {
+  width: 240px;
+  word-spacing: 2px;
+  padding: 2%;
+  margin: 2%;
+  background-color: var(--color-primary-Strong-Cyan);
+  color: var(--color-neutral-White);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 2px 1px hsl(171, 66%, 30%), 0 3px 13px rgba(38, 186, 164, 0.7);
+}
+.ios:hover {
+  cursor: pointer;
+  background-color: rgba(38, 186, 164, 0.8);
+}
+.mac:hover {
+  cursor: pointer;
+  background-color: rgba(67, 115, 255, 0.8);
+}
+.mac {
+  width: 240px;
+  word-spacing: 2px;
+  padding: 3%;
+  margin: 2%;
+  background-color: var(--color-primary-Light-Blue);
+  color: var(--color-neutral-White);
+  border: none;
+  border-radius: 2rem;
+  box-shadow: 0 2px 1px hsl(233, 40%, 45%), 0 3px 13px rgba(0, 0, 0, 0.3);
+}
+header {
+  background-image: url(./images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header {
+  width: 37rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header > img {
+  margin: 8rem 0 3rem 0;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: var(--font-weight-SemiBold);
+  margin-bottom: 1rem;
+}
+h2 {
+  font-size: 32px;
+  font-weight: var(--font-weight-SemiBold);
+  margin-bottom: 1rem;
+}
+h3 {
+  font-size: 25px;
+  font-weight: var(--font-weight-SemiBold);
+  margin-bottom: 1rem;
+}
+h4 {
+  margin: 0;
+}
+.header > p {
+  margin-bottom: 1rem;
+}
+.buttons {
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.sec1head {
+  width: 38rem;
+  text-align: center;
+  margin: 0 auto;
+}
+.sec1head > p {
+  margin-bottom: 5rem;
+}
+.snippets {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 10rem;
+}
+.sniplist {
+  word-spacing: 0.2rem;
+  flex: 1;
+  list-style-type: none;
+  margin: 4rem 15rem 0 5rem;
+}
+.sniplist > li > p {
+  margin-bottom: 2rem;
+  line-height: 2rem;
+}
+.snippets > img {
+  max-width: 50%;
+}
+.clipboard {
+  width: 38rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0 auto 3rem;
+}
+.clipboard > p {
+  line-height: 2rem;
+  margin-bottom: 5rem;
+}
+.supercharge {
+  display: inline-flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  text-align: center;
+  margin-left: 8rem;
+}
+.blacklist,
+.text,
+.sneak {
+  text-align: center;
+  width: 23rem;
+  line-height: 2rem;
+  word-spacing: 0.2rem;
+  margin-bottom: 6rem;
+}
+.workflow {
+  margin-bottom: 3rem;
+}
+.row {
+  display: flex;
+}
+.images {
+  display: flex;
+  margin: 0 9rem 10rem;
+  gap: 7rem;
+}
+.downbutton {
+  width: 38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+}
+.lastdiv {
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1fr;
+  background-color: hsl(201, 11%, 66%, 0.1);
+  padding: 2rem 2rem;
+}
+.top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.lastdiv > img {
+  width: 3rem;
+}
+.social {
+  margin-left: 16rem;
+}
+.social > img {
+  margin-right: 1rem;
+}
+.faq:hover {
+  color: var(--color-primary-Strong-Cyan);
+  cursor: pointer;
+}
+.privacy:hover {
+  color: var(--color-primary-Strong-Cyan);
+  cursor: pointer;
+}
+.install:hover {
+  color: var(--color-primary-Strong-Cyan);
+  cursor: pointer;
+}
+.contact:hover {
+  color: var(--color-primary-Strong-Cyan);
+  cursor: pointer;
+}
+.press:hover {
+  color: var(--color-primary-Strong-Cyan);
+  cursor: pointer;
+}
+.social > img:hover {
+  color: var(--color-primary-Strong-Cyan);
+  cursor: pointer;
+}
+
+@media (max-width: 480px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .buttons {
+    flex-direction: column;
+    padding: 0 80rem;
+  }
+  h1 {
+    width: 22rem;
+    font-size: 35px;
+    padding: 2%;
+  }
+  .mac,
+  .ios {
+    padding: 1rem;
+  }
+  .header > p {
+    width: 17rem;
+  }
+
+  header {
+    background-image: url(./images/bg-header-mobile.png);
+  }
+  h2 {
+    width: 18rem;
+    font-size: 29px;
+    padding: 3%;
+  }
+  p {
+    font-size: 16px;
+  }
+  .sec1head {
+    width: 18rem;
+  }
+  .sec1head > p {
+    width: 17rem;
+    margin: 0 5% 4rem;
+  }
+  .snippets {
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .snippets > img {
+    scale: 1.7;
+    margin-bottom: 2rem;
+  }
+  .sniplist {
+    align-items: center;
+    margin-left: 14rem;
+    width: 18rem;
+  }
+  .clipboard {
+    width: 17rem;
+    margin-bottom: 0;
+  }
+  .clipboard > img {
+    margin-top: -12rem;
+    scale: 0.4;
+  }
+  .row {
+    width: 18rem;
+    flex-direction: column;
+  }
+  .blacklist,
+  .text,
+  .sneak {
+    width: 19rem;
+    margin-left: 17px;
+    margin-bottom: 1.5rem;
+  }
+  .images {
+    width: 18rem;
+    flex-direction: column;
+    margin: 0 auto 10rem;
+    padding-left: 4rem;
+  }
+  .images > img {
+    width: 10em;
+  }
+  .workflow {
+    width: 18rem;
+    text-align: center;
+    margin-left: 17px;
+  }
+  .supercharge {
+    margin: 0;
+    width: 18rem;
+  }
+  .download {
+    width: 17rem;
+  }
+  .downbutton {
+    width: 18rem;
+  }
+  .lastdiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .top,
+  .bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+  .footer {
+    margin-bottom: 0;
+  }
+  .footer * {
+    margin-bottom: 1rem;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 0 1rem;
+  }
+  .social > img {
+    margin: 0 1.3rem;
+  }
+  .lastdiv > img {
+    margin-bottom: 2rem;
+  }
+}
