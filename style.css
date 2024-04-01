@@ -22,6 +22,7 @@
   color: var(--color-neutral-Dark-Grayish-Blue);
 }
 body {
+  width: 100%;
   overflow-x: hidden;
 }
 
@@ -29,6 +30,7 @@ p {
   color: var(--color-neutral-Grayish-Blue);
   margin-bottom: 2rem;
 }
+/* Buttons */
 .ios {
   width: 240px;
   word-spacing: 2px;
@@ -59,6 +61,11 @@ p {
   border-radius: 2rem;
   box-shadow: 0 2px 1px hsl(233, 40%, 45%), 0 3px 13px rgba(0, 0, 0, 0.3);
 }
+.buttons {
+  display: flex;
+  margin-bottom: 10rem;
+}
+/* Header */
 header {
   background-image: url(./images/bg-header-desktop.png);
   background-repeat: no-repeat;
@@ -80,7 +87,10 @@ header {
 .header > img {
   margin: 8rem 0 3rem 0;
 }
-
+.header > p {
+  margin-bottom: 1rem;
+}
+/* Headers */
 h1 {
   font-size: 40px;
   font-weight: var(--font-weight-SemiBold);
@@ -99,14 +109,7 @@ h3 {
 h4 {
   margin: 0;
 }
-.header > p {
-  margin-bottom: 1rem;
-}
-.buttons {
-  display: flex;
-  margin-bottom: 10rem;
-}
-
+/* Section 1 */
 .sec1head {
   width: 38rem;
   text-align: center;
@@ -132,7 +135,9 @@ h4 {
 }
 .snippets > img {
   max-width: 50%;
+  margin-top: 3rem;
 }
+/* Section 2 */
 .clipboard {
   width: 38rem;
   display: flex;
@@ -145,6 +150,7 @@ h4 {
   line-height: 2rem;
   margin-bottom: 5rem;
 }
+/* Section 3 */
 .supercharge {
   display: inline-flex;
   align-items: center;
@@ -161,6 +167,7 @@ h4 {
   line-height: 2rem;
   word-spacing: 0.2rem;
   margin-bottom: 6rem;
+  margin-right: 1rem;
 }
 .workflow {
   margin-bottom: 3rem;
@@ -173,6 +180,7 @@ h4 {
   margin: 0 9rem 10rem;
   gap: 7rem;
 }
+/* Section 4 */
 .downbutton {
   width: 38rem;
   display: flex;
@@ -181,6 +189,7 @@ h4 {
   text-align: center;
   margin: 0 auto;
 }
+/* Footer */
 .lastdiv {
   display: grid;
   grid-template-columns: 0.7fr 1fr 1fr;
@@ -234,20 +243,27 @@ h4 {
     display: flex;
     flex-direction: column;
   }
-
+/* Buttons */
   .buttons {
     flex-direction: column;
     padding: 0 80rem;
-  }
-  h1 {
-    width: 22rem;
-    font-size: 35px;
-    padding: 2%;
   }
   .mac,
   .ios {
     padding: 1rem;
   }
+  /* Headers */
+  h1 {
+    width: 22rem;
+    font-size: 35px;
+    padding: 2%;
+  }
+  h2 {
+    width: 18rem;
+    font-size: 29px;
+    padding: 3%;
+  }
+  /* Header */
   .header > p {
     width: 17rem;
   }
@@ -255,14 +271,11 @@ h4 {
   header {
     background-image: url(./images/bg-header-mobile.png);
   }
-  h2 {
-    width: 18rem;
-    font-size: 29px;
-    padding: 3%;
-  }
+  
   p {
     font-size: 16px;
   }
+  /* Section 1 */
   .sec1head {
     width: 18rem;
   }
@@ -281,9 +294,10 @@ h4 {
   }
   .sniplist {
     align-items: center;
-    margin-left: 14rem;
+    margin-left: 15.5rem;
     width: 18rem;
   }
+  /* Section 2 */
   .clipboard {
     width: 17rem;
     margin-bottom: 0;
@@ -292,6 +306,7 @@ h4 {
     margin-top: -12rem;
     scale: 0.4;
   }
+  /* Section 3 */
   .row {
     width: 18rem;
     flex-direction: column;
@@ -300,7 +315,7 @@ h4 {
   .text,
   .sneak {
     width: 19rem;
-    margin-left: 17px;
+    margin-left: 3.5rem;
     margin-bottom: 1.5rem;
   }
   .images {
@@ -315,18 +330,20 @@ h4 {
   .workflow {
     width: 18rem;
     text-align: center;
-    margin-left: 17px;
+    margin-left: 7.5rem;
   }
   .supercharge {
     margin: 0;
     width: 18rem;
   }
+  /* Section 4 */
   .download {
     width: 17rem;
   }
   .downbutton {
     width: 18rem;
   }
+  /* Footer */
   .lastdiv {
     display: flex;
     flex-direction: column;
