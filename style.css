@@ -242,7 +242,6 @@ h4 {
   body {
     display: flex;
     flex-direction: column;
-    overflow-x: hidden;
   }
 /* Buttons */
   .buttons {
